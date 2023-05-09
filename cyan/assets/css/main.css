@@ -125,26 +125,10 @@ input, select, textarea {
 /* Type */
 
 	html {
-		font-size: 18pt;
+		font-size: 12pt;
 	}
 
 		@media screen and (max-width: 1680px) {
-
-			html {
-				font-size: 14pt;
-			}
-
-		}
-
-		@media screen and (max-width: 1280px) {
-
-			html {
-				font-size: 12pt;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
 
 			html {
 				font-size: 11pt;
@@ -152,10 +136,26 @@ input, select, textarea {
 
 		}
 
+		@media screen and (max-width: 1280px) {
+
+			html {
+				font-size: 10pt;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			html {
+				font-size: 10pt;
+			}
+
+		}
+
 		@media screen and (max-width: 360px) {
 
 			html {
-				font-size: 10.5pt;
+				font-size: 9pt;
 			}
 
 		}
@@ -2487,6 +2487,7 @@ input, select, textarea {
 			background-repeat: repeat;
 			opacity: 1;
 			border-radius: inherit;
+			box-shadow: 0px 4px 8px rgb(0, 0, 0);
 		}
 
 /* List */
@@ -3469,8 +3470,8 @@ input, select, textarea {
 			right: 0;
 			text-align: right;
 			top: 0;
-			vertical-align: middle;
 			width: 7rem;
+			/*vertical-align: middle;*/
 		}
 
 			#menu .close:before {
@@ -4136,8 +4137,10 @@ input, select, textarea {
 }
 
 
-/* menu */
-
+/* menu------------------------------------------------------- 
+@media screen (max-width: ) {
+	
+}*/
 .header .menu {
   clear: both;
   max-height: 0;
@@ -4341,8 +4344,7 @@ input, select, textarea {
 		color: rgba(255, 255, 255, 0.75);
 		cursor: default;
 		position: relative;
-		padding: 5% 0%; !important
-		background-color: #f1f1f1;
+		padding: 5% 0% !important;
 	}
 
 		#banner button, #banner input, #banner select, #banner textarea {
@@ -4454,7 +4456,6 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			border-radius: 0;
-            
 		}
 
 			#banner .image img {
@@ -4545,8 +4546,8 @@ input, select, textarea {
 		-ms-align-items: center;
 		align-items: center;
 		background-color: #3c3c3c;
-		border-bottom-left-radius: 0.325rem;
-		border-bottom-right-radius: 0.325rem;
+		border-bottom-left-radius: 0rem;
+		border-bottom-right-radius: 0rem;
 		padding: 1.75rem 2rem;
 		color: #bdbdbd;
 		cursor: default;
@@ -4618,82 +4619,127 @@ input, select, textarea {
 		}
 
 /* Bulletpoints */
-@media (max-width: 1023px){
-    
+@media (max-width: 1023px) {  /*Less than 1023px width*/
 #bulletpoints { 
     display: inline-block;
-    padding: 10px 20px;
+    padding: 30px 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid rgba(189, 189, 189, 0.3);
     list-style: none;
-    background-color: #454545;
+    background-color: #ffffff;
     width: 100%;
-    position: relative;
+    position: flex;
 }
 
 #bulletpoints ul{
-    padding: 0px;
+    padding: 0;
     margin: 0;
 }
     
 .points li{
-    float: center;
-    padding-top: 10px;
-    margin: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 0px;
+    margin: 10px 0px;
     overflow: hidden;
     text-decoration: none;
+	border-bottom: 1px solid rgba(189, 189, 189, 0.3);
 }
 
-.points li h4{
+.points li:last-child {
+	border-bottom: none;
+  }
+
+.points li h4, .points li h5{
     display: block;
-    outline: 1px solid red;
-    padding: 20px;
-    border-right: 1px solid red;
+    padding: 10px 0px;
     text-decoration: none;
+	margin-bottom: 0;
+	cursor: default;
+	text-align: center;
 }
 
-.points li h4:hover{
-    color: steelblue;
+
+.points li h5{
+	width: 100%;
+	color: black;
+	font-weight: lighter;
+}
+
+.points li h4:hover, .points li h5:hover{
+	color: steelblue;
 }
 }
 
+@media screen and (max-width: 1280px){
+	.points li h4 {
+		font-size: 12pt
+	}
+}
 
 
-@media (min-width: 1024px){
+@media (min-width: 1024px){ /*More than 1024px width*/
 #bulletpoints li{
-      padding: 10px 20px;
+    padding: 10px 20px;
 }
     
 #bulletpoints {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      background-color: #454545;
+    display: flex;
+	padding: 30px 10px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid rgba(189, 189, 189, 0.3);
+	border-top: 5px solid rgba(0, 164, 185, 0);;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
 
 }
 
 #bulletpoints ul {
-      list-style: none;
-      padding: 0;
-      margin: 10px 10px;
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 10px 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #bulletpoints li {
-      text-align: center;
-      flex: 1;
+    text-align: center;
+    flex: 1;
+	border-right: 1px solid rgba(189, 189, 189, 0.3);
 }
 
+#bulletpoints li:last-child {
+	border-right: 1px solid rgba(189, 189, 189, 0);
+ }
+
 #bulletpoints li h4 {
-      display: inline-block; /* Needed to center text */
-      outline: 1px solid red;
-      padding: 20px;
-      border-right: 1px solid red;
-      text-decoration: none;
+    display: inline-block; /* Needed to center text */
+    padding: 20px 0px;
+    text-decoration: none;
+	cursor: default;
+	width: 100%;
+	text-align: left;
+}
+
+
+#bulletpoints li h5 {
+	cursor: default;
+	width: 100%;
+	color: rgb(0, 0, 0);
+	font-weight: lighter;
+	text-align: left;
+}
+
+#bulletpoints li h5:hover {
+    color: steelblue;  
 }
 
 #bulletpoints li h4:hover {
-      color: steelblue;
+    color: steelblue;
+}
 }
