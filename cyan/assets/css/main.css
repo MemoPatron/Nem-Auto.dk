@@ -345,7 +345,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #54c3e1;
+		color: #00375c;
 	}
 
 	blockquote {
@@ -2487,7 +2487,7 @@ input, select, textarea {
 			background-repeat: repeat;
 			opacity: 1;
 			border-radius: inherit;
-			box-shadow: 0px 4px 8px rgb(0, 0, 0);
+			box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
 		}
 
 /* List */
@@ -2982,7 +2982,7 @@ input, select, textarea {
 			width: 100%;
 			overflow-x: hidden;
 			overflow-y: hidden;
-			white-space: nowrap;
+			white-space: wrap;
 			padding-bottom: 0.125rem;
 		}
 
@@ -3557,7 +3557,7 @@ input, select, textarea {
 		max-width: calc(100% - 6rem);
 		margin: 0 auto;
 		background-color: #ffffff;
-		border-radius: 0.325rem;
+		border-radius: 0rem;
 	}
 
 		#wrapper > .main {
@@ -4743,3 +4743,27 @@ input, select, textarea {
     color: steelblue;
 }
 }
+
+/* Read more */
+#more {display: none;}
+#more1 {display: none;}
+
+#læs-mere {
+	padding-bottom: 20px;
+}
+
+#læs-mere a#myBtn, a#myBtn1 {
+	font-size: 90%;
+	font-weight: bold;
+	color: rgba(2, 80, 126, 0.678);
+	cursor: pointer;
+}
+
+#review p.text-muted, #review1 p.text-muted {
+	margin: 0;
+}
+
+
+
+
+/*-----*/
