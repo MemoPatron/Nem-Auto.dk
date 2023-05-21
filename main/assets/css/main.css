@@ -4268,13 +4268,42 @@ input, select, textarea {
 			line-height: inherit;
 		}
 
-			#header nav a {
-				display: block;
-				padding: 0 1.25rem;
-				border-bottom: 0;
-				outline: 0;
+		@media screen and (min-width: 738px) {
+			#header nav a[href="#menu"] {
+				position: relative;
+				text-indent: 4rem;
+				width: 4rem;
+				height: inherit;
+				overflow: hidden;
 			}
+			#header ul {
+				list-style: none;
+				padding: 0;
+			  }
+			#header li {
+				display: inline-block;
+				padding: 0px 20px;
+				border-right: 2px solid rgba(0, 0, 0, 0.253)
+			  }
+			#header li:last-child {
+				border-right: none;
+			  }
+			  
+			#header li a {
+				color: steelblue;
+				font-weight: bold;
+				font-size: medium;
+				font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			}
+		}
 
+			@media screen and (max-width: 737px) {
+				#header nav a {
+					display: none;
+					padding: 0 1.25rem;
+					border-bottom: 0;
+					outline: 0;
+				}
 				#header nav a[href="#menu"] {
 					position: relative;
 					text-indent: 4rem;
@@ -4282,7 +4311,6 @@ input, select, textarea {
 					height: inherit;
 					overflow: hidden;
 				}
-
 					#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
 						-moz-transition: opacity 0.2s ease-in-out;
 						-webkit-transition: opacity 0.2s ease-in-out;
@@ -4317,6 +4345,7 @@ input, select, textarea {
 					#header nav a[href="#menu"]:hover:after {
 						opacity: 1;
 					}
+				}
 
 		@media screen and (max-width: 736px) {
 
