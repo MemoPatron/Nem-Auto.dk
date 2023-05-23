@@ -4299,7 +4299,7 @@ input, select, textarea {
 
 			@media screen and (max-width: 737px) {
 				#header nav a {
-					display: none;
+					display: flex;
 					padding: 0 1.25rem;
 					border-bottom: 0;
 					outline: 0;
