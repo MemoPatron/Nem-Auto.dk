@@ -4270,36 +4270,28 @@ input, select, textarea {
 
 		@media screen and (min-width: 738px) {
 			#header nav a[href="#menu"] {
-				position: relative;
-				text-indent: 4rem;
-				width: 4rem;
-				height: inherit;
-				overflow: hidden;
+				display: none;
 			}
 			#header ul {
 				list-style: none;
-				padding: 0;
+				padding: 0px 10px;
 			  }
 			#header li {
 				display: inline-block;
 				padding: 0px 20px;
-				border-right: 2px solid rgba(0, 0, 0, 0.253)
-			  }
-			#header li:last-child {
-				border-right: none;
 			  }
 			  
 			#header li a {
-				color: steelblue;
-				font-weight: bold;
+				text-decoration: none;
+				border-bottom: 0;
+				color: rgb(18, 63, 100);
+				font-weight: thin;
 				font-size: medium;
-				font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 			}
 		}
 
 			@media screen and (max-width: 737px) {
 				#header nav a {
-					display: flex;
 					padding: 0 1.25rem;
 					border-bottom: 0;
 					outline: 0;
@@ -4310,6 +4302,11 @@ input, select, textarea {
 					width: 4rem;
 					height: inherit;
 					overflow: hidden;
+				}
+
+				#header ul {
+					list-style: none;
+					display: none;
 				}
 					#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
 						-moz-transition: opacity 0.2s ease-in-out;
@@ -4792,3 +4789,11 @@ input, select, textarea {
 	margin: 0;
 }
 
+
+/* Google maps responsive */
+@media screen and (max-width: 465px) {
+div #ResponsiveMap iframe {
+	width: 200;
+	height: 225;
+	}
+}

@@ -56,6 +56,7 @@ a, a:hover {
   font-weight: 500;
   line-height: 1.2;
   display: inline-block;
+  cursor: default;
 }
 .postcard__title_price {
   font-size: 1.5rem; /* Increase font size */
