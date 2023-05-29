@@ -4842,6 +4842,7 @@ input, select, textarea {
     display: flex;
     justify-content: center;
 	margin: 0;
+	padding: 0;
   }
 
   #ratings li {
@@ -4856,11 +4857,30 @@ input, select, textarea {
   #ratings p {
 	font-weight: bolder;
 	margin: 0;
-	color:#fbfdff
+	color:#fbfdff;
+	text-align: center;
   }
 
   #ratings p .seperate {
 	font-weight: bolder;
 	margin: 0;
 	color:#fbfdff
+  }
+
+  @media screen and (max-width: 420px) {
+	#ratings p {
+		font-size: 9pt;
+		font-weight: bolder;
+		margin: 0;
+		color:#fbfdff
+	  }
+  }
+
+  @media screen and (max-width: 375px) {
+	#ratings p {
+		font-size: 8pt;
+		font-weight: bolder;
+		margin: 0;
+		color:#fbfdff
+	  }
   }
