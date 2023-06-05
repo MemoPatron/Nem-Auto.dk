@@ -4284,10 +4284,11 @@ input, select, textarea {
 			#header li a {
 				text-decoration: none;
 				border-bottom: 0;
-				color: rgb(18, 63, 100);
+				color: rgba(18, 63, 100, 0);
 				font-weight: thin;
 				font-size: medium;
-				text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+				width: auto;
+				text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 			}
 
 			#header li a input[type="submit"], input[type="reset"], input[type="button"], button, .button {
