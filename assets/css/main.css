@@ -4653,7 +4653,8 @@ input, select, textarea {
 @media (max-width: 1023px) {  /*Less than 1023px width*/
 #bulletpoints { 
     display: inline-block;
-    margin: 20px 0px;
+    margin-top: -40px;
+	padding: 20px 30px;
 	border-bottom: 1px solid rgba(189, 189, 189, 0.3);
 	border-top: 1px solid rgba(189, 189, 189, 0.3);
     list-style: none;
