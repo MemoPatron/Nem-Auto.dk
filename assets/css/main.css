@@ -4660,7 +4660,6 @@ input, select, textarea {
     list-style: none;
     background-color: #ffffff;
     width: 100%;
-    position: flex;
 }
 
 #bulletpoints ul{
