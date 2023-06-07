@@ -4656,6 +4656,7 @@ input, select, textarea {
     padding: 30px 20px;
 	margin-bottom: 20px;
 	border-bottom: 1px solid rgba(189, 189, 189, 0.3);
+	border-top: 1px solid rgba(189, 189, 189, 0.3);
     list-style: none;
     background-color: #ffffff;
     width: 100%;
